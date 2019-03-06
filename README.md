@@ -11,6 +11,18 @@ run commond in terminal -
 > cd GroceryApp  
 > ./npmInstall.sh
 
+# run app in a script
+
+to run app in a single command
+
+./runApp.sh
+
+this will run both client and server in background
+
+# to kill procecss
+
+./killApp.sh
+
 #run client and server
 
 from GroceryApp directory start server and clinet as describe
