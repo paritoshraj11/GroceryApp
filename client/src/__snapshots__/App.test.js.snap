@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list row test case 1`] = `
+<li
+  style={
+    Object {
+      "alignItems": "center",
+      "borderBottomColor": "gray",
+      "borderBottomStyle": "solid",
+      "borderBottomWidth": 1,
+      "display": "flex",
+      "flexDirection": "row",
+      "marginBottom": 2,
+      "paddingBottom": 10,
+      "paddingLeft": 20,
+      "paddingRight": 20,
+      "paddingTop": 10,
+    }
+  }
+>
+  <span
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    a
+  </span>
+  <span
+    style={
+      Object {
+        "fontSize": 14,
+        "paddingLeft": 5,
+        "paddingRight": 5,
+        "textAlign": "center",
+      }
+    }
+  >
+    0
+  </span>
+  <img
+    onClick={[Function]}
+    src="/images/like.png"
+    style={
+      Object {
+        "paddingLeft": 5,
+        "paddingRight": 5,
+      }
+    }
+  />
+  <img
+    onClick={[Function]}
+    src="/images/dislike.png"
+    style={
+      Object {
+        "paddingLeft": 5,
+        "paddingRight": 5,
+      }
+    }
+  />
+</li>
+`;

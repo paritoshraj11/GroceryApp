@@ -16,6 +16,20 @@ app.get("/products", (req, res) => {
     data: productData
   });
 });
+
+app.get("/getProduct", (req, res) => {
+  let { _id } = req.query;
+  let data = findOne(productData, _id);
+  if (!data) {
+    res.json({
+      error: "data not found"
+    });
+  }
+  res.json({
+    data
+  });
+});
+
 app.post("/upvote", (req, res) => {
   let { _id } = req.body;
   let data = findOne(productData, _id);
@@ -35,6 +49,7 @@ app.post("/upvote", (req, res) => {
     data: { ...data }
   });
 });
+
 app.post("/downvote", (req, res) => {
   let { _id } = req.body;
   let data = findOne(productData, _id);
