@@ -54,14 +54,16 @@ export default class GroceryList extends React.Component {
   };
   render() {
     let {
-      state: { data = [] }
+      state: { data = [] },
+      onLike,
+      onDisLike
     } = this;
     return (
       <List
         style={listStyle.containerStyle}
         data={data}
         renderItem={data => {
-          return <ListRow data={data} likeAction={this.onLike} dislikeAction={this.onDisLike} />;
+          return <ListRow data={data} likeAction={onLike} dislikeAction={onDisLike} />;
         }}
       />
     );
